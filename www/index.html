@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="js/controllers/dashboard.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+  </head>
+  <body ng-app="starter"  ng-controller="DashboardCtrl">
+
+
+  <ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-header bar bar-dark">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <!--<ion-nav-view name="menuContent"></ion-nav-view>-->
+      <ion-content id="main-content" class="has-header">
+        <div class="row responsive-sm">
+          <label class="dark dashboard-headers">
+            <i class="icon ion-ios-folder-outline"></i>
+            NETWORKS:
+          </label>
+        </div>
+        <div class="row responsive-sm padding-horizontal padding-bottom">
+          <div class="col col-25 ">
+            <label class="item item-input item-select item-positive row-no-padding large-primary">
+              <div class="input-label">
+                <i class="icon ion-ios-world"></i>
+              </div>
+              <select >
+                <option>WARNER BROS</option>
+                <option>WARNER BROS</option>
+                <option>WARNER BROS</option>
+                <option>WARNER BROS</option>
+                <option>WARNER BROS</option>
+                <option>WARNER BROS</option>
+              </select>
+            </label>
+          </div>
+          <div class="col text-right ">
+            <label class="top-dashboard-navigation">
+              <i class="icon ion-ios-person"></i>
+            </label>
+            <label class="top-dashboard-navigation">
+              <i class="icon ion-android-notifications"></i>
+            </label>
+            <label class="top-dashboard-navigation">
+              <i class="icon ion-android-exit"></i>
+            </label>
+
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col item-divider-ios"></div>
+        </div>
+
+        <div class="row responsive-sm">
+          <label class="dark dashboard-headers">
+            <i class="icon ion-search"></i>
+              FILTERS:
+            </label>
+        </div>
+        <div class="row responsive-sm padding-horizontal padding-bottom">
+          <div class="col col-25 row-no-padding">
+            <label  class="item item-input item-select item-positive row-no-padding large-primary">
+              <div class="input-label">
+                <i class="icon ion-ios-grid-view-outline"></i>
+              </div>
+              <select>
+                <option>SUMMARY</option>
+                <option>CLIENTS</option>
+                <option>NETWORKS</option>
+                <option>PRODUCER</option>
+                <option>REPORTS</option>
+                <option>USERS</option>
+              </select>
+            </label>
+          </div>
+          <div class="col col-30 col-offset-20"></div>
+            <div class="col col-20 row-no-padding">
+            <label  class="item item-input item-select item-stable row-no-padding large-primary">
+              <div class="input-label">
+                <i class="icon ion-ios-calendar-outline"></i>
+              </div>
+              <select>
+                <option>7 days</option>
+                <option selected="selected">30 days</option>
+                <option>90 days</option>
+              </select>
+            </label>
+              </div>
+            <div class="col col-20 row-no-padding">
+              <label  class="item item-input item-select item-positive row-no-padding small-primary ">
+                <div class="input-label">
+                  <i class="icon ion-ios-gear-outline"></i>
+                </div>
+                <select>
+                  <option>Add Widget</option>
+                </select>
+              </label>
+          </div>
+          <div class="col col-10">
+            <div class="text-right">
+              <button class="button button-icon ion-navicon" menu-toggle="left"></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col item-divider-ios"></div>
+        </div>
+
+        <div class="row responsive-sm stable-bg">
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="rankings">
+                  <i class="icon ion-stats-bars"></i>
+                </label>
+                RANKINGS
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>9</h1>
+                    <h4 class="dark">GOOGLE</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>9</h1>
+                    <h4 class="dark">BING</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="circle backlinks">
+                  <i class="icon ion-link"></i>
+                </label>
+                BACKLINKS
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>1.2M</h1>
+                    <h4 class="dark">LINK DOMAINS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>14,104</h1>
+                    <h4 class="dark">BACKLINKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="facebook">
+                  <i class="icon ion-social-facebook"></i>
+                </label>
+                FACEBOOK
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>48.040</h1>
+                    <h4 class="dark">LIKES</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>196K</h1>
+                    <h4 class="dark">REACH</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row responsive-sm stable-bg">
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="analytics">
+                  <i class="icon ion-ios-analytics"></i>
+                </label>
+                GOOGLE ANALYTICS
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>14,116</h1>
+                    <h4 class="dark">VISITS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>29.37%</h1>
+                    <h4 class="dark">BOUNCE RATES</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="ad-words">
+                  <i class="icon ion-social-google"></i>
+                </label>
+                GOOGLE ADWORDS
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>1,044</h1>
+                    <h4 class="dark">CLICKS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>$1,272.86</h1>
+                    <h4 class="dark">COST</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="twitter">
+                  <i class="icon ion-social-twitter"></i>
+                </label>
+                TWITTER
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>36,885</h1>
+                    <h4 class="dark">FOLLOWERS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40">
+                    <h1>63,354</h1>
+                    <h4 class="dark">RE-TWEETS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row responsive-sm stable-bg">
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label>
+                  <i class="icon ion-android-apps"></i>
+                </label>
+                SITE AUDIT
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>221</h1>
+                    <h4 class="dark">ERRORS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>1,241</h1>
+                    <h4 class="dark">ISSUES</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label class="youtube">
+                  <i class="icon ion-social-youtube"></i>
+                </label>
+                YOUTUBE
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>8,449</h1>
+                    <h4 class="dark">LIKES</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>50,283</h1>
+                    <h4 class="dark">VIEWS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col col-33">
+            <div class="card">
+              <div class="item item-divider text-center">
+                <label>
+                  <i class="icon ion-settings"></i>
+                </label>
+                GOOGLE SEARCH CONSOLE
+              </div>
+              <div class="item item-text-wrap text-center">
+                <div class="row">
+                  <div class="col col-40">
+                    <h1>11,343</h1>
+                    <h4 class="dark">CLICKS</h4>
+                  </div>
+                  <div class="widget-divider"></div>
+                  <div class="col col-40 text-center">
+                    <h1>434</h1>
+                    <h4 class="dark">IMPRESSIONS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </ion-content>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" width="50" class="dark dark-bg">
+      <ion-header-bar class="bar-stable bar-dark dash-borderless">
+      </ion-header-bar>
+      <ion-content>
+        <ion-list >
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-person"></i>
+          </ion-item>
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-location"></i>
+          </ion-item>
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-ios-settings"></i>
+          </ion-item>
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-ios-search-strong"></i>
+          </ion-item>
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-connection-bars"></i>
+          </ion-item>
+          <ion-item class="dark item-dark" menu-close href="#/app/search">
+            <i class="button button-icon button-dark icon ion-settings"></i>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+
+  <!--<div class="bar bar-header">-->
+    <!--&lt;!&ndash;<button class="button button-icon icon ion-navicon"></button>&ndash;&gt;-->
+    <!--<button id="top-side-menu-action" class="button side-menu-action">-->
+      <!--<i class="icon ion-ios-telephone"></i>-->
+    <!--</button>-->
+    <!--<div id="network-list" class="list">-->
+      <!--<label id="networks-select" class="item item-input item-select">-->
+        <!--<div class="input-label">-->
+          <!--NETWORKS-->
+        <!--</div>-->
+        <!--<select id="networks">-->
+          <!--<option>WARNER BROS.</option>-->
+        <!--</select>-->
+      <!--</label>-->
+    <!--</div>-->
+    <!--<div class="h1 title title-right">Header Buttons</div>-->
+    <!--<ion-side-menus>-->
+      <!--&lt;!&ndash; Left menu &ndash;&gt;-->
+      <!--<ion-side-menu side="left">test</ion-side-menu>-->
+      <!--<ion-side-menu-content>-->
+        <!--Main content, usually-->
+      <!--</ion-side-menu-content>-->
+    <!--</ion-side-menus>-->
+  <!--</div>-->
+  <!--<ion-content class="has-header">-->
+    <!--<div>TEST</div>-->
+  <!--</ion-content>-->
+  </body>
+</html>

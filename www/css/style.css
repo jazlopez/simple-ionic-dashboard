@@ -1,0 +1,115 @@
+/* Empty. Add your own CSS if you like */
+
+h5 {
+  min-width: 100px !important;
+}
+
+
+/*.menu .bar-header{*/
+  /*background-color: #247BC6;*/
+/*}*/
+
+.top-dashboard-navigation{
+  font-size: 20px; padding:4px;
+  color: #387ef5;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+}
+
+.item-complex .item-content, .item-radio .item-content{
+  padding: 4px 4px 4px 4px;
+}
+
+.dashboard-headers {
+  font-size:12px;
+  font-weight: 500;
+  margin:2px;
+}
+.item{
+  font-size: 12px;
+  padding: 0px 2px 2px 2px;
+}
+.item-select select {;
+  font-size: 11px;
+  padding: 0 38px 0 0px;
+  text-transform: uppercase;
+  font-weight: 500;
+  /*padding-left: 20px;*/
+  /*right: 25px;*/
+  /*padding-right: 5px;*/
+}
+
+.input-label{
+  padding: 7px 10px 7px 20px;
+}
+
+.item h1{
+  font-size: 14px;
+}
+
+.item h4{
+  font-size: 11px;
+}
+
+.item h1, .item h4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.widget-divider{
+  border:1px solid #D9D9D9; width: 1px; margin: 0 auto;
+}
+
+.rankings{
+  color: darkorange;
+  font-size: 18px;
+  padding:8px;
+}
+
+.analytics{
+  color: salmon;
+  font-size: 18px;
+  padding:8px;
+}
+
+.ad-words{
+  color: salmon;
+  font-size: 18px;
+  padding:8px;
+}
+
+.backlinks{
+  color: darkgreen;
+  font-size: 18px;
+  padding:8px;
+}
+.facebook{
+  color: steelblue;
+  font-size: 18px;
+  padding:8px;
+}
+.youtube {
+  color: #ff0000;
+  font-size: 18px;
+  padding:8px;
+}
+
+.console{
+  color: #6b46e5;
+  font-size: 18px;
+  padding:8px;
+}
+
+.google{
+  color: #fff00f;
+  font-size: 18px;
+  padding:8px;
+
+}
+.twitter{
+  color: #0a9dc7;
+  font-size: 18px;
+  padding:8px;
+}
