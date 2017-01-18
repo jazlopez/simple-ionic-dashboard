@@ -1,4 +1,4 @@
-# simple-ionic-dashboard
+# Simple Ionic Dashboard
 Simple Application Dashboard using Cordova/Ionic | Demo Purpose
 
 Online version: http://jlopez.mx:8100/
